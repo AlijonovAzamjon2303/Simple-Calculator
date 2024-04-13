@@ -45,4 +45,19 @@ switch(input)
             Console.WriteLine($"{ifoda} = {natija}");
         }
         break;
+    case "2" :
+        {
+            // log5(25);
+            Console.Write("Ifodani kiriting [log125(125)]: ");
+            string ifoda = Console.ReadLine();
+            int index1 = ifoda.IndexOf("(");
+            int index2 = ifoda.IndexOf(")");
+            string strNum1 = ifoda.Substring(3, index1 - 2 - 1);
+            string strNum2 = ifoda.Substring(index1 + 1, index2 - index1 - 1);
+            double num1 = Convert.ToDouble(strNum1);
+            double num2 = Convert.ToDouble(strNum2);
+            float natija = (float)(Math.Log(num2) / Math.Log(num1));
+            Console.WriteLine($"{ifoda} = {natija}");
+        }
+        break;
 }
