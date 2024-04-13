@@ -47,7 +47,6 @@ switch(input)
         break;
     case "2" :
         {
-            // log5(25);
             Console.Write("Ifodani kiriting [log125(125)]: ");
             string ifoda = Console.ReadLine();
             int index1 = ifoda.IndexOf("(");
